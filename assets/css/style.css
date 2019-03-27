@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(195, 240, 248);
+}
+
+.topo{
+        margin-top: 5%;
+}
+
+.login{
+    text-align: center;
+}
+
+.login a {
+    color: #007bff;
+    
+}
+.login a:hover {
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+}
+
+.btn {
+    margin: 5% 3% 0 0;
+    
+}
+
+.footer {
+    background-color: #17a2b8;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    
+}
