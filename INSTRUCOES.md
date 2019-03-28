@@ -20,4 +20,9 @@
 `http://localhost:8080/phpmyadmin/`
 
 - Importar Dump do SQL:
-Download do arquivo SQL.[INSERIR LINK PARA DOWNLOAD]
+[Download do arquivo SQL.](https://github.com/jozemaria/desafio/blob/master/usuario.sql)
+
+
+
+
+> "Não foi possivel realizar a conexão com banco de dados para concluir a aplicação, aplicação incompleta. Fico agradecido pela oportunidade" - @jozemariajr

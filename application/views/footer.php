@@ -1,7 +1,7 @@
   <footer class="footer">
       <div class="container">
       <div class=" d-flex justify-content-between">
-        Github: @jozemaria<a href="https://github.com/jozemaria/desafio/blob/master/cod.md">Documentação</a>
+        Github: @jozemaria<a href="https://github.com/jozemaria/desafio/blob/master/INSTRUCOES.md">Documentação</a>
       </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
