@@ -15,7 +15,7 @@
 
 	<nav class="navbar navbar-expand-md navbar-light" style="background-color: #17a2b8;">
 	<div class="container">
-    <a class="navbar-brand" href="<?php echo base_url('login')?>"><img width="80px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Logos.svg/1200px-Logos.svg.png"></a>
+    <a class="navbar-brand" href="<?php echo base_url('')?>"><img width="80px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Logos.svg/1200px-Logos.svg.png"></a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +24,7 @@
   
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav ml-auto"> 
-      <li class="nav-item"><a class="nav-link" href="<?php echo base_url('login')?>">Login</a></li>
+      <li class="nav-item"><a class="nav-link" href="<?php echo base_url('')?>">Login</a></li>
       <li class="nav-item"><a class="nav-link" href="<?php echo base_url('cadastro')?>">Cadastro</a></li>
       <li class="nav-item"><a class="nav-link" href="<?php echo base_url('sobre')?>">Sobre</a></li>
       <li class="nav-item"><a class="nav-link disabled">LessClick</a></li>

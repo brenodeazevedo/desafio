@@ -24,4 +24,9 @@ class Inicio extends CI_Controller {
 		$this->load->view('sobre', $dados);
 	}
 
+	public function logar()	{
+		$dados['titulo'] = 'Seja bem vindo';
+		$this->load->view('logar', $dados);
+	}
+
 }

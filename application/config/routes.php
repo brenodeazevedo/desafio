@@ -54,6 +54,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['sobre'] = 'inicio/sobre';
 $route['cadastro'] = 'inicio/cadastro';
+$route['logar'] = 'inicio/logar';
 # ['view'] = 'controle/metodo'
 $route['login'] = 'inicio/index';
 $route['login'] = 'setup/login';

@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost:8080/phpmyadmin',
-	'username' => 'root',
+	'hostname' => '',
+	'username' => '',
 	'password' => '',
-	'database' => 'desafioArena',
+	'database' => '',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
