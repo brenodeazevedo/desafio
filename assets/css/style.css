@@ -1,10 +1,14 @@
 body {
     background-color: rgb(195, 240, 248);
 }
-
+.teste {
+    padding-left: 10%;
+    padding-right: 10%;
+}
 .topo{
         margin-top: 5%;
 }
+@media (max-width: 575.98px) { .topo { margin: 0 auto; } }
 
 .login{
     text-align: center;

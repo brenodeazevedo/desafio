@@ -10,11 +10,18 @@ class Inicio extends CI_Controller {
 
 	public function index()	{
 		$dados['titulo'] = 'Login de Clientes';
-		$this->load->view('index', $dados);
+		$this->load->view('login', $dados);
 	}
 
 	public function cadastro()	{
+		$this->load->helper('form');
 		$dados['titulo'] = 'Cadastro de Clientes';
-		$this->load->view('cadastro');
+		$this->load->view('cadastro', $dados);
 	}
+
+	public function sobre()	{
+		$dados['titulo'] = 'Sobre o Criador';
+		$this->load->view('sobre', $dados);
+	}
+
 }
