@@ -1,0 +1,476 @@
+/*  Reset  */
+
+body, h1, h2, h3, p, ul{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Georgia, serif;
+	color: #252525;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+/*  GRID  */
+
+.container {
+	max-width: 1224px;
+	margin:  0 auto;
+	
+}
+
+.container::before, .container::after {
+	content: '';
+	display: table;
+	clear: both;
+
+}
+
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 {
+	margin-left: 10px;
+	margin-right: 10px;
+	float: left;
+	display: block;
+	min-height: 1px;
+}
+
+.grid-1 {
+	width: calc(8.333% - 20px);
+}
+
+.grid-2 {
+	width: calc(16.666% - 20px);
+}
+
+.grid-3 {
+	width: calc(25% - 20px);
+}
+
+.grid-4 {
+	width: calc(33.333% - 20px);
+}
+
+.grid-5 {
+	width: calc(41.666% - 20px);
+}
+
+.grid-6 {
+	width: calc(50% - 20px);
+}
+
+.grid-7 {
+	width: calc(58.333% - 20px);
+}
+
+.grid-8 {
+	width: calc(66.666% - 20px);
+}
+
+.grid-9 {
+	width: calc(75% - 20px);
+}
+
+.grid-10 {
+	width:  calc(83.333% - 20px);
+}
+
+.grid-11 {
+	width: calc(91.666% - 20px);
+}
+
+.grid-12 {
+	width: calc(100% - 20px);
+}
+
+
+/* @media only screen and (max-width: 739px) {
+	
+	.container {
+		max-width: 300px;
+	}
+
+	.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 {
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+		float: none;
+	}
+} */
+
+
+/* ==============================   CSS do template ADMIN  =================================*/
+
+/* Cabecalho admin */
+
+.cabecalho {
+	width: 100%;
+	padding: 20px 0;
+	background-color: #131f33;
+}
+
+.cabecalho .logo {
+	font-size: 1.8em;
+	text-decoration: none;
+	color: #fff;
+}
+
+.cabecalho .menu {
+	text-align: right;
+	position: relative;
+	top: 5px;
+}
+
+.cabecalho .menu li {
+	display: inline-block;
+	padding-left: 15px;
+}
+
+.cabecalho .menu li a {
+	font-size: 1.1em;
+	color: #fff;
+	text-decoration: none;
+}
+
+.cabecalho .menu li a:hover {
+	text-decoration: underline;
+}
+
+.titulo-painel {
+	text-align: center;
+	font-size: 2.2em;
+	padding: 10px 0;
+}
+
+.titulo-painel::after {
+	content: '';
+	display: block;
+	width: 300px;
+	max-width: 100%;
+	height: 2px;
+	box-shadow: 2px 2px 1px #000;
+	margin: 0 auto;
+}
+
+/*   footer do admin   */
+
+.footer {
+	width: 100%;
+	padding: 50px 0;
+	background-color: #131f33;
+	color: #fff;
+	margin-top: 80px;
+}
+
+/*  Home do painel admin  */
+
+.nav-info {
+	padding: 92px 0;
+}
+
+.nav-info-item {
+	height: 140px;
+	border: 2px solid rgba(0, 0, 0, 0.6);
+	border-radius: 5px;
+	margin-bottom: 8px;
+}
+
+.nav-info-item .box-info {
+	position: relative;
+	top: 48px;
+	font-size: 1.6em;
+}
+
+.nav-info-item .icone {
+	font-size: 3.8em;
+	position: relative;
+	top: 30px;
+	text-align: right;
+}
+
+
+/*   tela de formulário de cadastro   */
+
+.error {
+	background: rgb(235, 229, 229);
+	padding: 10px 5px;
+	margin: 10px 0;
+	color: red;
+}
+
+.titulo-page {
+	text-align: center;
+	padding: 30px 0;
+}
+
+.form {
+	width: 600px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.form input {
+	width: 95%;
+	height: 38px;
+	border-radius: 5px;
+	padding-left: 8px;
+	margin-bottom: 12px;
+	border: 2px solid rgba(92, 87, 87, 0.4);
+}
+
+.form .select {
+	width: 140px;
+	height: 22px;
+	margin-bottom: 12px;
+	display: block
+}
+
+.btn {
+	width: 130px;
+	height: 37px;
+	padding: 7px;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	background-color: #131f33;
+	cursor: pointer;
+}
+
+
+/*  Tela de listagem de clientes  */
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	min-width: 600px;
+}
+
+.wrap {
+	overflow: auto;
+	max-width: 100%;
+	margin-bottom: 120px;
+}
+  
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+.btn-editar {
+	background-color: rgb(23, 54, 228);
+}
+
+.btn-excluir {
+	background-color: rgb(216, 24, 24);
+}
+
+.btn-criar {
+	width: 150px !important;
+	position: relative;
+	bottom: 8px;
+	background-color: rgb(41, 214, 41);
+}
+
+.pagination {
+	padding: 15px;
+}
+
+
+
+
+
+
+
+
+/*==============================   CSS do template SITE  ============================*/
+
+/* cabecalho  */ 
+
+.nome-perfil {
+	padding: 8px;
+	border: 2px solid rgba(250, 250, 250, 0.6);
+	border-radius: 12px;
+}
+
+.cabecalho-blue {
+	background-color: #225fc1;
+}
+
+
+
+/* Footer */
+
+.footer-blue {
+	background-color: #225fc1;
+	margin-top: 130px;
+}
+
+
+
+
+
+/* Página Home do site */
+
+.subtitulo {
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 1.4em;
+}
+
+.galeria {
+	padding-top: 20px;
+}
+
+
+.item-galeria {
+	padding: 5px 5px 25px 5px;
+	margin-bottom: 10px;
+	height: 253px;
+	background-color: rgb(245, 241, 241);
+	box-shadow: 1px 1px 9px 1px #000;
+	transition: 1s;
+}
+
+.item-galeria:hover {
+	transform: scale(1.2);
+}
+
+.item-galeria img {
+	height: 180px;
+	margin: 0 auto;
+	margin-bottom: 22px;
+}
+
+.item-galeria p {
+	font-size: 1em;
+	color: rgba(11, 11, 11, 0.8);
+}
+
+
+/* Página de login */
+
+.form-margin {
+	margin-bottom: 70px;
+}
+
+
+/* Página de perfil de um cliente */
+
+.titulo-top {
+	margin-top: 60px !important;
+}
+
+
+/*   Tela de cadastro de um novo evento   */
+
+.form-upload {
+	width: 400px;
+	max-width: 100%;
+	margin: 90px auto 30px auto;
+}
+
+.form-upload label{
+	display: block;
+}
+
+.form-upload input[type="text"] {
+	width: 100%;
+	height: 38px;
+	border-radius: 5px;
+}
+
+.form-upload textarea{
+	width: 100%;
+	height: 70px;
+	border-radius: 5px;
+	margin-top: 15px;
+}
+
+.form-upload input[type="file"] {
+	display: none;
+}
+
+.form-upload .input-img {
+	margin-top: 10px;
+	width: 170px;
+	padding: 7px 5px;
+	border-radius: 10px;
+	color: rgb(24, 56, 233);
+	cursor: pointer;
+}
+
+.form-upload .btn-upload {
+	margin-top: 35px;
+	background-color: rgb(24, 56, 233);
+}
+
+
+/*  Tela de meus eventos  */
+
+.sem-eventos {
+	text-align: center;
+	padding-top: 150px;
+}
+
+
+
+  
+/*   Media queries  */
+
+@media only screen and (max-width: 960px) {
+	.grid-3 {
+		width: calc(33.33% - 20px);
+	}
+
+	.grid-4 {
+		width: calc(50% - 20px);
+	}
+}
+
+@media only screen and (max-width: 740px) {
+	.grid-3 {
+		width: calc(50% - 40px);
+	}
+
+	.grid-6 {
+		width: calc(100% - 20px);
+	}
+	.dados-usuario {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 530px) {
+	.grid-3 {
+		width: calc(100% - 20px);
+	}
+
+	.grid-4 {
+		width: calc(100% - 20px);
+	}
+}
+
+
+
+
+

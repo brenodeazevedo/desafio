@@ -49,6 +49,34 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'welcome';
+$route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+
+/*---------------------------Minhas Rotas-----------------------------*/
+
+
+$route['admin']['GET'] = 'admin/index';
+
+$route['admin/clientes']['GET'] = 'clientes/index';
+$route['admin/clientes/(:num)']['GET'] = 'clientes/show/$1';
+$route['admin/clientes/form_cadastro']['GET'] = 'clientes/formCadastro';
+$route['admin/clientes/cadastro']['POST'] = 'clientes/cadastro';
+$route['admin/clientes/form_update/(:num)']['GET'] = 'clientes/formUpdate/$1';
+$route['admin/clientes/atualizar/(:num)'] = 'clientes/update/$1';
+$route['admin/clientes/excluir/(:num)'] = 'clientes/destroy/$1';
+
+$route['clientes/perfil']['GET'] = 'perfis/perfil';
+$route['clientes/perfil/altera-senha']['POST'] = 'perfis/alterarSenha';
+
+$route['galeria']['GET'] = 'galerias/index';
+$route['galeria/form_cadastro']['GET'] = 'galerias/formCadastro';
+$route['galeria/upload']['POST'] = 'galerias/upload';
+
+$route['login']['GET'] = 'login/formLogin';
+$route['login']['POST'] = 'login/session';
+$route['logout']['GET'] = 'login/logout';
+
+
+
