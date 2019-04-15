@@ -52,3 +52,40 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+
+$route['default_controller'] = 'welcome';
+$route['404_override'] = '';
+$route['translate_uri_dashes'] = FALSE;
+
+//página inicial
+$route['arena'] = "welcome/index";
+//tela de login
+$route['arena/login'] = "login/index";
+//autenticação
+$route['arena/admin'] = "login/auth";
+//autenticação
+$route['arena/cliente'] = "login/auth";
+//tela inicial do admin
+$route['arena/admin/home'] = "login/admin";
+//tela inicial do cliente
+$route['arena/cliente/home'] = "login/cliente";
+//lista de clientes
+$route['arena/admin/clientes'] = "cliente/index";
+//tela cadastro cliente
+$route['arena/admin/clientes/cadastro'] = "usuario/cadastro";
+//cadastra cliente
+$route['arena/admin/cliente/cadastro']['POST'] = 'usuario/cadastrar';
+//edita cliente
+$route['arena/admin/cliente/editar/(:num)'] = 'usuario/editar/$1';
+	
+//deleta cliente
+$route['arena/admin/cliente/delete/(:num)']['POST'] = 'usuario/excluir/$1';
+//cadastra de galeria
+$route['arena/admin/galeria'] = "admin/galeria";
+//deslogar
+$route['arena/login/sair'] = "login/sair";
+
+
+$route['arena/lista'] = "usuario/index";
+$route['arena/lista/(:num)'] = "usuario/index";
