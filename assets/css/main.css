@@ -1,0 +1,15 @@
+.center-middle {
+	top: 50%;
+}
+
+.login-container {
+	background-color: white;
+}
+
+.main-container {
+	min-height: 300px;
+	margin-top: 50px;
+	padding-top: 5px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
