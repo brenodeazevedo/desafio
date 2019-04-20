@@ -1,0 +1,33 @@
+.bg{
+	width: 100vw;
+	height: 100vh;
+	background: url(http://localhost/CodeIgniter/assets/imagens/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+}
+.login-center{
+	width: 600px;
+	height: 250px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	margin-top: 230px;
+	padding-top: 20px;
+}
+form{
+	width: 100vw;
+}
+.btn-login{
+	background-color: #ccc !important;
+	background: #00CCC0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    width: 200px !important;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+input{
+	border-radius: 0 !important;
+}

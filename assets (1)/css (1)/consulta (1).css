@@ -1,0 +1,43 @@
+.box5{
+  height: 100vh;
+  background-color: #EBEBEB;
+  display: flex;
+  justify-content:center;
+  padding: 0 !important;
+  font-family: 'Raleway', sans-serif;
+  
+}
+.box6 {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  background-color: white;
+  height: 60vh;
+  box-shadow: 2px 2px 5px 2px #D6D6D6;
+  width: 40vw;
+  margin-top: 150px;
+  height: 190px;
+  justify-content: center;
+  padding-top: 20px;
+}
+input{
+  border-radius: 0 !important;
+  width: 350px !important;
+  margin-left: 130px !important;
+}
+form{
+  width: 800px; !important;
+  display: flex;
+  align-items: row wrap !important;
+} 
+.btn-consultar{
+  margin-left: 230px;
+}
+.btn-consulta{
+  background-color: #ccc !important;
+  background: #00CCC0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  width: 100px !important;
+  color: white !important;
+}

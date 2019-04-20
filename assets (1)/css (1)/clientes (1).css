@@ -1,0 +1,21 @@
+body{
+	display: flex;
+	justify-content: center;
+
+}
+.table{
+	border: 0 !important;
+	width: 800px !important;
+	margin-top: 95px;
+	border-radius: 50px !important;
+}
+.tabela-cabeça{
+	background-color: #038C73;
+	color: white;
+	font-size: 17px;
+}
+.corpo{
+	font-size: 15px;
+	background-color: white;
+
+}

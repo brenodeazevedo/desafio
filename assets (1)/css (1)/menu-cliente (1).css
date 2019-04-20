@@ -1,0 +1,14 @@
+.menu{
+  height: 10vh;
+  background-color: #038C73 !important;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 !important;
+  font-family: 'Raleway', sans-serif;
+  align-items: center;
+  justify-content: flex-end;
+}
+.logoff{
+  color: white;
+  margin-right: 50px;
+}

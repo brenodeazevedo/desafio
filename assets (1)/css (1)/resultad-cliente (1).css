@@ -1,0 +1,16 @@
+body{
+	display: flex;
+	justify-content: center;
+
+}
+.table{
+	border: 0 !important;
+	width: 800px !important;
+	margin-top: 95px;
+	border-radius: 50px !important;
+}
+.corpo{
+	font-size: 15px;
+	background-color: white;
+
+}
