@@ -9,17 +9,17 @@ class Home extends CI_Controller
 		$this->load->helper('url');
 		$this->load->helper('authorization');
 		$this->load->library('session');
-		$this->load->view('base/header');
 	}
 
 	public function index()
 	{
 		if (isLogged()) {
-			redirect('/users');
+			redirect(isAdmin() ? '/users' : '/events');
 			return;
 		}
 		$login_Error = $this->input->get('login_Error');
 		$this->load->view('home', ['login_Error' => $login_Error]);
-		$this->load->view('base/footer');
 	}
+
+	
 }

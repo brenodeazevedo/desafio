@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
+$this->load->view('base/header');
 ?>
 <div class="row">
   <div class="col-md-6 offset-md-3 col-xs-10 offset-xs-1">
@@ -25,3 +26,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
     </div>
   </div>
 </div>
+<?php
+$this->load->view('base/footer');
+?>

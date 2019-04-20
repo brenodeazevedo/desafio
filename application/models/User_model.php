@@ -127,7 +127,7 @@ class User_model extends CI_Model
         return array_column($this->db
             ->where('userId', $userId)
             ->select('roleId')
-            ->get('user_roles')
+            ->get('user_role')
             ->result(), "roleId");
     }
 }

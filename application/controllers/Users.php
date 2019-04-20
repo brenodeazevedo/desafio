@@ -46,7 +46,8 @@ class Users extends CI_Controller
         $result = $this->User_model->delete($id);
         $this->load->view('message', [
             'message' => $result ? 'Usuário deletado com sucesso' : 'Ocorreu um erro ao deletar o usuário',
-            'type' => $result ? 'info' : 'danger'
+            'type' => $result ? 'info' : 'danger',
+            'url' => '/users'
         ]);
     }
     /**
@@ -85,7 +86,8 @@ class Users extends CI_Controller
             $this->load->view('message', [
                 'type' => $result ? 'info' : 'danger',
                 'message' => $result ? 'Usuário criado com sucesso' : 'Ocorreu um erro ao criar o usuário. 
-                Verifique os dados e tente novamente.'
+                Verifique os dados e tente novamente.',
+                'url' => '/users'
             ]);
         }
     }
@@ -129,7 +131,8 @@ class Users extends CI_Controller
             $this->load->view('message', [
                 'type' => $result ? 'info' : 'danger',
                 'message' => $result ? 'Usuário editado com sucesso' : 'Ocorreu um erro ao editar o usuário. 
-                Verifique os dados e tente novamente.'
+                Verifique os dados e tente novamente.',
+                'url' => '/users'
             ]);
         }
     }
@@ -147,9 +150,10 @@ class Users extends CI_Controller
         $roles = $this->User_model->getRoles($result);
         $this->session->set_userdata([
             'logged' => 1,
+            'userId' => $result,
             'roles' => $roles
         ]);
-        redirect('/users');
+        redirect('/');
     }
     /**
      * /users/logout/
