@@ -10,7 +10,10 @@ class Home extends CI_Controller
 		$this->load->helper('authorization');
 		$this->load->library('session');
 	}
-
+	/**
+	 * /
+	 * Pagina de login
+	 */
 	public function index()
 	{
 		if (isLogged()) {

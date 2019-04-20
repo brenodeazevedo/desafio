@@ -32,6 +32,47 @@ class Users extends CI_Controller
             'pages' => range(1, $numPages)
         ]);
     }
+
+    /**
+     * /users/changepassword
+     * Muda a senha do usuário logado
+     */
+    public function changepassword()
+    {
+        ensureIsLogged();
+        $this->load->helper('form');
+        $this->load->library('form_validation');
+        $this->form_validation->set_rules('actualPassword', 'Senha atual', 'callback_verifypassword');
+        $this->form_validation->set_rules('password', 'Senha', 'required|min_length[6]');
+        $this->form_validation->set_rules('passwordconf', 'Confirme a senha', 'required|matches[password]');
+        if ($this->form_validation->run() === false) {
+            $this->load->view('user/changePassword', [
+                'actualPassword' => set_value('actualPassword')
+            ]);
+        } else {
+            $userId = $this->session->userdata('userId');
+            $result = $this->User_model->changePassword($this->input->post('password'), $userId);
+            $this->load->view('message', [
+                'type' => $result ? 'info' : 'danger',
+                'message' => $result ? 'Sua senha foi modificada com sucesso' : 'Ocorreu um erro ao modificar a senha. 
+                Verifique os dados e tente novamente.',
+                'url' => '/'
+            ]);
+        }
+    }
+
+    public function verifypassword($password)
+    {
+        $userId = $this->session->userdata('userId');
+        $user = $this->User_model->getOne($userId);
+        if (password_verify($password, $user->password)) {
+            return true;
+        } else {
+            $this->form_validation->set_message('verifypassword', 'A senha atual não confere');
+            return false;
+        }
+    }
+
     /**
      * /users/remove/:id
      * Remove um usuário por id
@@ -138,7 +179,7 @@ class Users extends CI_Controller
     }
     /**
      * /users/login/
-     * Formulário para logar os usuários.
+     * Rota para logar os usuários.
      */
     public function login()
     {

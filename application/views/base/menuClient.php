@@ -6,6 +6,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <a href="/events" class="nav-link">Galerias</a>
+            <a href="/users/changepassword" class="nav-link">Mudar senha</a>
             <a href="/users/logout" class="nav-link">Logout</a>
         </ul>
     </div>

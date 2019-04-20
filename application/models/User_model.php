@@ -54,9 +54,9 @@ class User_model extends CI_Model
      * @param data Dados do usuário
      * @return boolean Indica se teve sucesso na atualização
      */
-    public function update($id, $data) 
+    public function update($id, $data)
     {
-        if(array_key_exists('password', $data)) {
+        if (array_key_exists('password', $data)) {
             $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
         }
         return $this->db
@@ -129,5 +129,14 @@ class User_model extends CI_Model
             ->select('roleId')
             ->get('user_role')
             ->result(), "roleId");
+    }
+
+    public function changePassword($password, $userId)
+    {
+        return $this->db
+            ->where('id', $userId)
+            ->update('user', [
+                'password' => password_hash($password, PASSWORD_DEFAULT)
+            ]);
     }
 }
